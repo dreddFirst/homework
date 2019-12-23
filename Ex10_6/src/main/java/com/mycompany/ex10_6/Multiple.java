@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.ex10_3;
+package com.mycompany.ex10_6;
 
 /**
  *
  * @author treba
  */
-public class Convert {
+public class Multiple {
+    public boolean isMultiple(int a, int b){
+        if(b%a == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
     
-    public double convertF(double C){
-        return ((C/5)*9)+32;
-    }
-    public double convertC(double F){
-        return ((F-32)/9)*5;
-    }
 }

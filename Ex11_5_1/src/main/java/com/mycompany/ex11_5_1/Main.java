@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.ex9_2;
+package com.mycompany.ex11_5_1;
 
 /**
  *
  * @author treba
  */
-public class Count {
-    private static int counter = 0;
-    Count(){
-        counter++;        
+
+import com.mycompany.ex11_5_1.Holiday;
+public class Main {
+    
+    public static void main(String[] str){
+        
     }
     
-     void print(){
-        System.out.println(counter);
-    }
+    
 }

@@ -3,16 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.ex9_2;
-//import com.mycompany.ex9_2.Count;
+package com.mycompany.ex11_6;
+
+import java.util.Scanner;
+
 /**
  *
  * @author treba
  */
 public class Main {
     public static void main(String[] str){
-        Count c = new Count();
+        Scanner sc = new Scanner(System.in);
         
-        c.print();
+        int d = sc.nextInt();
+        int m = sc.nextInt();
+        int y = sc.nextInt();
+        
+        Date date = new Date(d,m,y);
+        date.displayDate();        
     }
 }

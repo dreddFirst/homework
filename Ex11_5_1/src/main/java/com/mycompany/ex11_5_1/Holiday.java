@@ -10,24 +10,35 @@ package com.mycompany.ex11_5_1;
  * @author treba
  */
 public class Holiday {
-    private String name;
-    private String month;
-    private int day;
+    private static String name;
+    private static String month;
+    private static int day;
+    
+    Holiday(){}
     
     Holiday(String a, int b, String c){
-        name = a;
-        day = b;
-        month = c;
+        this.name = a;
+        this.day = b;
+        this.month = c;
     }
     
-    boolean inSameMonth(String str1, String str2){
+    boolean inSameMonth(Holiday h){
         boolean b;        
-        if(str1.equals(str2)){
+        if(this.name.equals(h.name)){
             b = true;
         }else{
             b = false;
         }
         return b;
+    }
+    
+    double avgDate(Holiday h[]){
+        double sum = 0;
+        for(int i = 0; i < h.length; i++){
+            sum += h[i].day;
+            System.out.println(sum);
+        }
+        return sum/h.length;
     }
     
     

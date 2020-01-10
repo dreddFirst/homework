@@ -27,14 +27,15 @@ public class Main {
         
         ArrayList <String> al_clone = new ArrayList<String>(al);
         
+        al_clone.clear();
+        System.out.println("List empty "+ al_clone);
+        
+        al_clone = new ArrayList<String>(al);
+        
         System.out.println("Comparare: ");
         System.out.println(al +"\n"+al_clone);
         System.out.println(al.equals(al_clone));
-        al_clone.clear();
         
-            System.out.println("List empty "+ al_clone);
-        
-        al_clone = new ArrayList<String>(al);
         System.out.println("Introduceti alt element pentru pozitia a 2: ");
         al_clone.set(1,sc.next());
         System.out.println("List modified: " + al_clone);
@@ -54,7 +55,6 @@ public class Main {
         int i = 0;
         
         do{
-            
             String str1 = al_clone1.get(i).toLowerCase();
             if(i < al_clone1.size()){
                 if(!str1.endsWith("s")){                   

@@ -14,18 +14,29 @@ import java.util.Scanner;
 
 public class FirstPro 
 {
-    static float C,F,c,f ;
+    
     
     public static void main(String[] args)
     {
     Scanner sc = new Scanner(System.in);
-        System.out.println("Introduceti temperatura in Fahrenheit:");
-        F = sc.nextFloat();
-        C = (5*(F-32))/9;
-        System.out.println("Temperatura in Celsius: "+C+"C");
-        System.out.println("Introduceti temperatura in Celsius:");
-        C = sc.nextFloat();
-        F = (9*C+(32*5))/5;
-        System.out.println("Temperatura in Fahrenheit:"+F+"F");   
+        
+        int a = sc.nextInt();
+
+        int aa[] = new int[a];
+        for(int i = 0; i < a; i++){
+            aa[i] = sc.nextInt();
+        }
+
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        boolean z = true;
+        for(int i = 0; i < aa.length-1; i++){
+            if((aa[i] == b && aa[i+1] == c)||(aa[i] == c && aa[i+1] == b)){
+                        z = false;
+                        
+            }
+        }
+        System.out.println(z);
+    
     }
 }

@@ -65,8 +65,9 @@ public class Main {
             }else{
                 break;
             }
-          System.out.println(al_clone1);   
+             
         }while(i <al_clone1.size());
+        System.out.println(al_clone1);
     }
     
     private static void reverse(ArrayList<String> al_clone1){
@@ -74,7 +75,7 @@ public class Main {
         ArrayList <String> al_reverse = new ArrayList<String>();
         for(int i =0; i < al_clone1.size(); i++){
             str.append(al_clone1.get(i));
-            str.append(" ");
+//            str.append(" ");
             al_reverse.add(str.reverse().toString());
             str.delete(0, str.length());
         }

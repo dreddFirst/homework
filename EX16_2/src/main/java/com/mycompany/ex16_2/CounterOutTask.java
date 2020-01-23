@@ -20,6 +20,6 @@ public class CounterOutTask extends AbstraktTask implements Task{
     public void execute(){
         int counter = 0;
         counter ++;
-        System.out.println("Executed "+counter + " times" + "\n" + super.getId() + super.getCreatedAT() + super.getExecuteAT());
+        System.out.println("Executed "+counter + " times" + "\n" + super.getId() + " " + super.getCreatedAT() + " " + super.getExecuteAT());
     }
 }

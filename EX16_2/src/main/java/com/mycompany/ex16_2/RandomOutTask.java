@@ -20,6 +20,6 @@ public class RandomOutTask extends AbstraktTask implements Task{
     public void execute(){
         int random;
         random = (int)(Math.random()*10);
-        System.out.println("Random = " + random + "\n" + super.getId() + super.getCreatedAT() + super.getExecuteAT());
+        System.out.println("Random = " + random + "\n" + super.getId()+ " "  + super.getCreatedAT() + " " + super.getExecuteAT());
     }
 }

@@ -22,6 +22,6 @@ public class OutTask extends AbstraktTask implements Task{
     
     @Override
     public void execute(){
-        System.out.println(this.str + super.getId() + super.getCreatedAT() + super.getExecuteAT());
+        System.out.println(this.str + " " + super.getId() + " " + super.getCreatedAT() + " " + super.getExecuteAT());
     }
 }

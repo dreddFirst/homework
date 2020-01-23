@@ -39,11 +39,6 @@ public class Main {
         LocalDate azi = LocalDate.now();
         Period virsta = Period.between(azi, my_date);
         System.out.println(virsta);
-//       
-        
-//        String dateStr = "Fri, 19 Jul 2013 01:30:22 GMT";
-//        SimpleDateFormat sdf     = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-//        Date date    = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z").parse(dateStr); 
-//        System.out.println(sdf.format(date));
+      
     }
 }

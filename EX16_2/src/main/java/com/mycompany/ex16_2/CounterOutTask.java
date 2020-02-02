@@ -12,13 +12,13 @@ import java.time.LocalDateTime;
  * @author treba
  */
 public class CounterOutTask extends AbstraktTask implements Task{
-
+    private int counter = 0;
     public CounterOutTask(int id, LocalDateTime createdAT, LocalDateTime executeAT) {
         super(id, createdAT, executeAT);
     }
     @Override
     public void execute(){
-        int counter = 0;
+        
         counter ++;
         System.out.println("Executed "+counter + " times" + "\n" + super.getId() + " " + super.getCreatedAT() + " " + super.getExecuteAT());
     }

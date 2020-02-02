@@ -6,6 +6,8 @@
 package com.mycompany.ex16_2;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -14,7 +16,7 @@ import java.time.LocalDateTime;
 public class Main {
     public static void main(String[] args){
         
-        OutTask ot = new OutTask("",1,LocalDateTime.now(), LocalDateTime.now());
+        OutTask ot = new OutTask("Method ececute() OutTask class \n",1,LocalDateTime.now(), LocalDateTime.now());
         ot.execute();
         
         RandomOutTask rt = new RandomOutTask(2, LocalDateTime.now(), LocalDateTime.now());
@@ -22,5 +24,14 @@ public class Main {
         
         CounterOutTask ct = new CounterOutTask(3, LocalDateTime.now(), LocalDateTime.now());
         ct.execute();
+        ct.execute();
+        ct.execute();
+        
+        List<Object> l = new ArrayList<>();
+        l.add(ot);
+        l.add(rt);
+        l.add(ct);
+        
+        
     }
 }
